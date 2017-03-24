@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portflio - About</title>
+  <link rel="icon" type="images" href="images/portfolio-icon.gif">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="css/template.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="navbar navbar-default navbar-fixed-top navbar-transparent">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">Portfolio</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">About Me</h3>
+      </div>
+      <div class="panel-body">
+        <div class="photoabout">
+          <center><img src="images/tecs.jpg" class="img-rounded" alt="Nawapong" width="230px" height="320px"><center><br>
+          </div>
+          <p>Hi!! My name is Nawapong Atiwattananon. I'm going to introduce myself.I have born in Phuket, grown up in Phangnga. and I am studying third years
+            Bachelor's Degree of Science in Prince of Songkla University, Phuket Campus. As for my family, I have no brother and sister.
+            My mother is a shopkeeper.  I am a sincere person, good thinker, flexible to work in any group.
+            I can work for longer hours without any break, only if I'm interested in that.<br>
+            I'm interested in many things such as football, watching movies. I love to watching sci-fi, action, drama movies.
+            I wanna improve my English skills. I'm glad to have here. My other hobbies including being with my friends.<br>
+            I'm personally interested in becoming an Database Administrator, however, there are many different career opportunities.
+            I believe that a job should be like a hobby.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">Awards and honors</h3>
+          </div>
+          <div class="w3-content w3-display-container">
+            <br>
+            <center><img class="mySlides" src="images/cer1.png" style="width:80%"></center>
+            <center><img class="mySlides" src="images/cer2.png" style="width:80%"></center>
+            <center><img class="mySlides" src="images/cer3.png" style="width:80%"></center>
+            <center><img class="mySlides" src="images/cer4.png" style="width:80%"></center>
+            <center><img class="mySlides" src="images/cer5.png" style="width:80%"></center>
+
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+        </div>
+      </div>
+      <br><br><br><br>
+
+      <footer id="footer">
+        <div class="">
+          <div class="text-center"><br>
+            <p>Author : Nawapong Atiwattananon - <a href="http://www.phuket.psu.ac.th/intro/">Prince of Songkla University Phuket Campus</a></p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+      </script>
+    </body>
+    </html>
